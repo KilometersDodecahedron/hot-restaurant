@@ -11,7 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         //script goes here
-
+        class Customer {
+            constructor(name, phone, email, id, reservation){
+                this.name = name;
+                this.phone = phone;
+                this.emial = email;
+                this.id = id;
+                //this is a bool used to say if they are on the waiting list or not
+                //this would be set by the code, not user input
+                //not sure if we'll need it
+                this.reservation = reservation;
+            }
+            
+        }
     </script>
 </body>
 </html>

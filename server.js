@@ -10,11 +10,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-app.get("/api/reservations", function (req, res) {
+app.get("/reserve", function (req, res) {
     res.sendFile(path.join(__dirname, "reserve.html"))
 });
 
-app.get("/api/waitinglist", function (req, res) {
+app.get("/tables", function (req, res) {
     res.sendFile(path.join(__dirname, "tables.html"))
 });
 
